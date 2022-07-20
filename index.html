@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <title>survey-form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1 id="title">What do you hate the most?</h1>
+  <p id="description">No, really...be ..honest</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">Name</label>
+    <input id="name" type="text" placeholder="Full name" required>
+    <label id="email-label" for="email">E-mail</label>
+    <input id="email" type="email" placeholder="enter your email" required>
+    <label id="number-label" for="number">Age</label>
+    <input id="number" type="number" min="1" max="100" placeholder="Enter your age" required>
+    <label id="drop-question" for="dropdown">What makes you really angry?</label>
+      <select id="dropdown">
+        <option value="">--Please choose an option--</option>
+        <option value="Selection 1">Slow drivers</option>
+        <option value="Selection 2">people who fart in public</option>
+        <option value="Selection 3">Walmart shoppers</option>
+        <option value="Selection 4">stupid forms like these</option>
+      </select>
+      <p>Do you hate kids?</p>
+    <input type="radio" name="question" value="yes">Yes</input>
+    <input type="radio" name="question" value="no">No</input>
+      <p>Check which ones you hate the most</p>
+    <input type="checkbox" id="check1" name ="checkbox1" value="front-end">
+    <label for="check1">Kids</label>
+    <input type="checkbox" id="check2" name ="checkbox1" value="back-end">
+    <label for="check2">politicians</label>
+    <input type="checkbox" id="check3" name ="checkbox3" value="back-end" placeholder="Enter your comments here">
+    <label for="check3">mouth breathers</label>
+
+
+    <label for="optional"><p id="text-area-text">Enter any additional complaints</p></label>
+    <textarea id="optional" name="optional">
+    </textarea>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+
